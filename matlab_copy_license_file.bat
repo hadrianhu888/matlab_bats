@@ -1,22 +1,23 @@
 echo on
-echo date_time = %date% %time%
-set filename=%date_time%logger.txt
-call :log > %filename%
+call :log > matlab_logger.txt 
 if exist %filename%
-(
-    call :log >> %filename%
-)
-else 
 (
     exit /b 1
 )
-:log 
+else 
+(
+    call :log >> %filename%
+)
+:log
+echo %date% %time% > date_time.txt
+set datetimef=%date:~-4%_%date:~3,2%_%date:~0,2%__%time:~0,2%_%time:~3,2%_%time:~6,2%
+echo %datetimef%
 echo this batch file copies the matlab crack dll to the correct folder to simplify this process without error
-set dll_dir = .\*.dll
-set matlab = D:\Program Files\Matlab\bin\matlab.exe
+del tempCodeRunnerFile.bat
 echo copies the libmwlmgrimpl.dll to lmgrimpl directory in Matlab install root folder
 copy /y *.dll D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl
 echo successfully copied
+rem successfully copied
 cd D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl
-start D:\Program Files\Matlab\bin\matlab.exe
+start /d "D:\Program Files\Matlab\bin\matlab.exe"
 echo off 
