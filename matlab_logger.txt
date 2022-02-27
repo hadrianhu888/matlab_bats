@@ -1,10 +1,13 @@
 
-C:\Users\lordx\Desktop\GitHub\matlab_bats>echo 2022-02-27 18:07:16.41  1>date_time.txt 
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo 2022-02-27 18:32:37.54  
+2022-02-27 18:32:37.54 
 
-C:\Users\lordx\Desktop\GitHub\matlab_bats>set datetimef=2-27_2-_20__18_07_16 
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo 2022-02-27 18:32:37.54  1>date_time.txt 
 
-C:\Users\lordx\Desktop\GitHub\matlab_bats>echo 2-27_2-_20__18_07_16 
-2-27_2-_20__18_07_16
+C:\Users\lordx\Desktop\GitHub\matlab_bats>set datetimef=2-27_2-_20__18_32_37 
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo 2-27_2-_20__18_32_37 
+2-27_2-_20__18_32_37
 
 C:\Users\lordx\Desktop\GitHub\matlab_bats>echo this batch file copies the matlab crack dll to the correct folder to simplify this process without error 
 this batch file copies the matlab crack dll to the correct folder to simplify this process without error
@@ -22,7 +25,7 @@ successfully copied
 
 C:\Users\lordx\Desktop\GitHub\matlab_bats>rem successfully copied 
 
-C:\Users\lordx\Desktop\GitHub\matlab_bats>cd D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl 
+C:\Users\lordx\Desktop\GitHub\matlab_bats>cd "D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl" 
 
 C:\Users\lordx\Desktop\GitHub\matlab_bats>start /d "D:\Program Files\Matlab\bin\matlab.exe" 
 
