@@ -1,0 +1,27 @@
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo 2022-02-27 18:40:06.74  
+2022-02-27 18:40:06.74 
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo 2022-02-27 18:40:06.74  1>date_time.txt 
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo this batch file copies the matlab crack dll to the correct folder to simplify this process without error 
+this batch file copies the matlab crack dll to the correct folder to simplify this process without error
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>del tempCodeRunnerFile.bat 
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo copies the libmwlmgrimpl.dll to lmgrimpl directory in Matlab install root folder 
+copies the libmwlmgrimpl.dll to lmgrimpl directory in Matlab install root folder
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>copy /y *.dll D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl 
+The syntax of the command is incorrect.
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo successfully copied 
+successfully copied
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>rem successfully copied 
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>cd "D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl" 
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>start  "" "D:\Program Files\Matlab\bin\matlab.exe" 
+
+C:\Users\lordx\Desktop\GitHub\matlab_bats>echo off  
