@@ -2,6 +2,8 @@ echo on
 set datetimef=%date:~-4%_%date:~3,2%_%date:~0,2%__%time:~0,2%_%time:~3,2%_%time:~6,2%
 echo %datetimef%
 call :log > %datetimef%_matlab_logger.txt 
+matlab_dir = "D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl"
+matlab_exe = "D:\Program Files\Matlab\bin\matlab.exe"
 if exist %filename%
 (
     call :log >> %filename%
@@ -18,6 +20,7 @@ echo copies the libmwlmgrimpl.dll to lmgrimpl directory in Matlab install root f
 copy /y *.dll D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl
 echo successfully copied
 rem successfully copied
-start "" "D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl"
-start  "" "D:\Program Files\Matlab\bin\matlab.exe"
+start "" %matlab%
+rem starting matlab 
+start  "" %matlab_exe%
 echo off 
