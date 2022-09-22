@@ -3,6 +3,14 @@ set datetimef=%date:~-4%_%date:~3,2%_%date:~0,2%__%time:~0,2%_%time:~3,2%_%time:
 echo %datetimef%
 call :log > %datetimef%_matlab_logger.txt 
 matlab_dir = "D:\Program Files\Matlab\bin\win64\matlab_startup_plugins\lmgrimpl"
+if exist %matlab_dir%
+{
+	echo Folder Exists
+}
+else 
+{
+	echo Folder Does Not Exist 
+}
 matlab_exe = "D:\Program Files\Matlab\bin\matlab.exe"
 if exist %filename%
 (
